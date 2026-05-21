@@ -170,7 +170,7 @@ export default function Dashboard() {
                   <XAxis dataKey="date" hide />
                   <Tooltip
                     contentStyle={{ fontSize: 11, borderRadius: 6, border: "0.5px solid #e5e7eb", padding: "4px 8px" }}
-                    formatter={(v: number) => [fmt(v), "Valeur"]}
+                    formatter={(v) => [fmt(Number(v)), "Valeur"]}
                     labelStyle={{ fontSize: 10, color: "#9ca3af" }}
                   />
                   <Area
